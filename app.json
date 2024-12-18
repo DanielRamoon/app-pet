@@ -1,0 +1,129 @@
+{
+  "expo": {
+    "name": "Petvidade",
+    "slug": "petvidade",
+    "scheme": "ptvd",
+    "version": "1.0.7",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-transparent.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#f65731"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/a7159032-a7a9-413d-ab45-6e8a9cd29dc7"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSLocationUsageDescription": "The App uses your location to save your travel history and provide location based places",
+        "NSLocationAlwaysUsageDescription": "The App uses your location to save your travel history and provide location based places",
+        "NSLocationWhenInUseUsageDescription": "The App uses your location to save your travel history and provide location based places",
+        "UIBackgroundModes": [
+          "location",
+          "fetch",
+          "remote-notification"
+        ]
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyDEn7ZIPLS3FXkyAHqwX2scLGJV87agzKI"
+      },
+      "bundleIdentifier": "com.lgtng.petvidade"
+    },
+    "primaryColor": "#f65731",
+    "backgroundColor": "#27272a",
+    "androidNavigationBar": {
+      "backgroundColor": "#000000"
+    },
+    "android": {
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/foreground.png",
+        "backgroundImage": "./assets/background.png"
+      },
+      "package": "com.lgtng.petvidade",
+      "versionCode": 5,
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "autoVerify": true,
+          "data": [
+            {
+              "scheme": "https",
+              "host": "petvidade.lgtng.com",
+              "pathPrefix": "/app"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyD6E_WdfxaCvzjZATZlho9uvCs06R4HEQA"
+        }
+      },
+      "permissions": [
+        "android.permission.LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        "android.permission.POST_NOTIFICATIONS",
+        "android.permission.FOREGROUND_SERVICE"
+      ]
+    },
+    "extra": {
+      "eas": {
+        "projectId": "a7159032-a7a9-413d-ab45-6e8a9cd29dc7"
+      }
+    },
+    "plugins": [
+      [
+        "expo-background-fetch",
+        {
+          "minimumInterval": 15
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "permissions": {
+            "android": {
+              "requestForegroundPermissions": true,
+              "requestBackgroundPermissions": true
+            }
+          },
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location.",
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true,
+          "isIosBackgroundLocationEnabled": true
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification.png",
+          "color": "#ffffff"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow $(PRODUCT_NAME) to access your photos"
+        }
+      ],
+      "expo-localization",
+      "expo-font"
+    ],
+    "owner": "petvidade-project",
+    "runtimeVersion": "1.0.2"
+  }
+}

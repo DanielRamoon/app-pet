@@ -1,0 +1,99 @@
+{selectedTab === -1 ? (
+				<>
+					<View style={{ display: "flex", alignItems: "flex-start", marginTop: 0, paddingLeft: 10, paddingRight: 10 }}>
+						<Box
+							rounded="5"
+							style={{
+								backgroundColor: colors.backgroundSecondary,
+								width: "100%",
+								minHeight: pet.description && pet.description.length > 10 ? 100 : 10,
+								marginTop: 5,
+								borderColor: colors.secondaryText,
+								borderWidth: 1,
+							}}
+						>
+							{/* Caminhadas */}
+							<TouchableOpacity
+								onPress={() => setSelectedTab(0)}
+								style={[styles.listItem, { borderTopColor: "transparent", borderBottomColor: colors.secondaryText }]}
+							>
+								<View style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+									<Foundation name="guide-dog" size={32} color={colors.text} />
+									<Text style={{ paddingLeft: 15 }}>{i18n.get("pets.profile.walks")} (0)</Text>
+								</View>
+
+								<Octicons name="chevron-right" size={24} color={colors.text} />
+							</TouchableOpacity>
+
+							{/* MedVet */}
+							<TouchableOpacity
+								onPress={() => setSelectedTab(1)}
+								style={[styles.listItem, { borderTopColor: "transparent", borderBottomColor: colors.secondaryText }]}
+							>
+								<View style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+									<MaterialIcons name="medical-services" size={32} color={colors.text} />
+									<Text style={{ paddingLeft: 15 }}>{i18n.get("pets.profile.medvet")}</Text>
+								</View>
+
+								<Octicons name="chevron-right" size={24} color={colors.text} />
+							</TouchableOpacity>
+
+							{/* Dog food */}
+							<TouchableOpacity
+								onPress={() => setSelectedTab(2)}
+								style={[styles.listItem, { borderTopColor: "transparent", borderBottomColor: colors.secondaryText }]}
+							>
+								<View style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+									<MaterialCommunityIcons name="food-drumstick" size={32} color={colors.text} />
+									<Text style={{ paddingLeft: 15 }}>{i18n.get("pets.profile.food")}</Text>
+								</View>
+
+								<Octicons name="chevron-right" size={24} color={colors.text} />
+							</TouchableOpacity>
+						</Box>
+					</View>
+
+					<View
+						style={{
+							display: "flex",
+							alignItems: "flex-start",
+							marginBottom: "auto",
+							marginTop: 30,
+							paddingLeft: 10,
+							paddingRight: 10,
+						}}
+					>
+						<Text color={colors.text} fontWeight="bold" fontSize="xl" style={{ marginLeft: 10 }}>
+							{i18n.get("pets.petDescription")}
+						</Text>
+
+						<Box
+							rounded="5"
+							style={{
+								backgroundColor: colors.cardColor,
+								width: "100%",
+								minHeight: pet.description && pet.description.length > 10 ? 100 : 10,
+								marginTop: 5,
+							}}
+						>
+							<Text color={colors.text} style={{ marginTop: 10, marginLeft: 10 }}>
+								{pet.description}
+							</Text>
+						</Box>
+					</View>
+				</>
+			) : (
+				<View style={{ display: "flex", alignItems: "flex-start", marginTop: 0, paddingLeft: 10, paddingRight: 10 }}>
+					<TouchableOpacity
+						onPress={() => setSelectedTab(-1)}
+						style={{ display: "flex", flexDirection: "row", alignItems: "center", width: "100%", paddingLeft: 10 }}
+					>
+						<View style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
+							<Octicons name="x" size={24} color={colors.text} />
+							<Text fontSize="lg" style={{ paddingLeft: 15 }}>
+								{i18n.get("goBack")}
+							</Text>
+						</View>
+					</TouchableOpacity>
+				</View>
+			)}

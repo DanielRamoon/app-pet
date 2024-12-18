@@ -1,0 +1,68 @@
+{
+	"native-base": {
+		"colors": {
+			"primary": {
+				"50": "#E3F2F9",
+				"100": "#C5E4F3",
+				"200": "#A2D4EC",
+				"300": "#7AC1E4",
+				"400": "#47A9DA",
+				"500": "#0088CC",
+				"600": "#007AB8",
+				"700": "#006BA1",
+				"800": "#005885",
+				"900": "#003F5E"
+			}
+		},
+		"config": {
+			"initialColorMode": "light"
+		}
+	},
+	"kitten-ui": {
+		"color-primary-100": "#C8FBED",
+		"color-primary-200": "#94F7E5",
+		"color-primary-300": "#5CE7D9",
+		"color-primary-400": "#34D0CD",
+		"color-primary-500": "#00A5B1",
+		"color-primary-600": "#008198",
+		"color-primary-700": "#00617F",
+		"color-primary-800": "#004666",
+		"color-primary-900": "#003354",
+		"color-success-100": "#D8FDD3",
+		"color-success-200": "#A9FCA9",
+		"color-success-300": "#7CF687",
+		"color-success-400": "#5AED76",
+		"color-success-500": "#28E25D",
+		"color-success-600": "#1DC25C",
+		"color-success-700": "#14A258",
+		"color-success-800": "#0C8351",
+		"color-success-900": "#076C4B",
+		"color-info-100": "#CEE9FE",
+		"color-info-200": "#9ED1FE",
+		"color-info-300": "#6EB3FE",
+		"color-info-400": "#4A99FD",
+		"color-info-500": "#0F6EFC",
+		"color-info-600": "#0A55D8",
+		"color-info-700": "#073FB5",
+		"color-info-800": "#042C92",
+		"color-info-900": "#021E78",
+		"color-warning-100": "#FFFACC",
+		"color-warning-200": "#FFF599",
+		"color-warning-300": "#FFEE66",
+		"color-warning-400": "#FFE73F",
+		"color-warning-500": "#FFDC00",
+		"color-warning-600": "#DBBA00",
+		"color-warning-700": "#B79900",
+		"color-warning-800": "#937900",
+		"color-warning-900": "#7A6200",
+		"color-danger-100": "#FFE0D5",
+		"color-danger-200": "#FFBAAC",
+		"color-danger-300": "#FF8C82",
+		"color-danger-400": "#FF6365",
+		"color-danger-500": "#FF3045",
+		"color-danger-600": "#DB2346",
+		"color-danger-700": "#B71845",
+		"color-danger-800": "#930F41",
+		"color-danger-900": "#7A093E"
+	}
+}

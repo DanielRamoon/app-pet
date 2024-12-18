@@ -1,0 +1,29 @@
+{
+	"project_info": {
+		"project_number": "998937857944",
+		"project_id": "petvidade-app",
+		"storage_bucket": "petvidade-app.appspot.com"
+	},
+	"client": [
+		{
+			"client_info": {
+				"mobilesdk_app_id": "1:998937857944:android:f04a27c3b5ce0d2e8325ed",
+				"android_client_info": {
+					"package_name": "com.lgtng.petvidade"
+				}
+			},
+			"oauth_client": [],
+			"api_key": [
+				{
+					"current_key": "AIzaSyCCfNyrfmYhBcJ-2NxNkBZEfwA67e0aFzw"
+				}
+			],
+			"services": {
+				"appinvite_service": {
+					"other_platform_oauth_client": []
+				}
+			}
+		}
+	],
+	"configuration_version": "1"
+}

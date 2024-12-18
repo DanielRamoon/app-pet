@@ -1,0 +1,6 @@
+# Supabase
+.branches
+.temp
+schemas/*.dev.sql
+seeds/*.prod.sql
+.yarn

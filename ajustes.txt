@@ -1,0 +1,3 @@
+@opontoluiz  @gominskii 
+
+- Melhorar mensagem de alerta do i18n: grantLocationPermissionError. Ajustar para esclarecer que "o tempo todo" deve ser marcado nas permissões do aplicativo
